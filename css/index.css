@@ -1,4 +1,121 @@
 /* *********************************** */
 /* *** Estilos SOLO para index.html *** */
 /* *********************************** */
+body{
+    background-color: #83C1F8;
+}
+header{   
+    grid-column:2/3;
+    grid-row: 1/1;
+    align-items: center;
+        /* Subgrid */
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45%;
+}
 
+main{
+    grid-column:2/3;
+    grid-row: 2/3;
+    align-items: center;
+    
+    /* subgrid */
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20%;
+}
+
+.header_texto{
+   display:flex;
+  font-family: sans-serif;
+   }
+
+.header_texto_izq{
+    color: #fff;
+    font-weight: normal;
+}
+
+.header_texto_der{
+    font-weight: normal;
+}
+
+nav{
+    width: 70%;
+    display:flex;
+    justify-content: space-between;
+}
+    
+
+a{
+color: #fff;
+text-decoration: none;
+font-weight: bold;
+font-family:sans-serif;
+}
+
+h1{
+    color: #234975;
+    margin-left: 2rem;
+}
+.main_formulario_completar{
+    margin-left: 2rem;
+}
+
+figure{
+ 
+}
+
+.main_formulario{
+    background-color:#ffff;
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+
+ul{
+    margin-left: 2rem;
+}
+
+li{
+    list-style: none;
+   
+}
+
+button{
+    border: 1px solid rgb(14, 140, 199);
+    border-radius: 30px;
+    margin: 1rem;
+    padding: 0.7rem;
+    background-color:#299AF4;
+    color: white;
+    font-size:1rem;
+    font-weight:bold;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+
+form {
+	display: flex;
+	align-items: center;
+	font-size: 0.4rem;
+}
+svg {
+	border-left: 2px solid #eee;
+}
+
+svg,
+input {
+	border-top: 2px solid #eee;
+	border-bottom: 2px solid #eee;
+	padding: 0.5rem;
+}
+
+input {
+	font-size: 3em;
+	border-right: 2px solid #eee;
+	outline: 0;
+}

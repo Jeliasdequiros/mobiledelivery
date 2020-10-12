@@ -1,54 +1,90 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <!-- SEO = Básico -->
-    <title></title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- SEO = Redes Sociales -->
-    <meta property="og:title" content="" />
-    <meta property="og:type" content="" />
-    <meta property="og:url" content="" />
-    <meta property="og:image" content="" />
+<head>
+  <meta charset="utf-8" />
+  <!-- SEO = Básico -->
+  <title></title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- App Web, inidicar al navegador que elementos mostrar en un JSON -->
-    <link rel="manifest" href="site.webmanifest" />
-    <!-- icono de acceso para IOS -->
-    <link rel="apple-touch-icon" href="icon.png" />
-    <!-- Recordar que favicon.ico tiene que estar en el directorio inicial -->
+  <!-- SEO = Redes Sociales -->
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
 
-    <!-- links de estilos -->
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/index.css" />
-    <!-- Se cambia el tema de algunos navegadores -->
-    <meta name="theme-color" content="#fafafa" />
-  </head>
-  <body>
-    <div id="container">
+  <!-- App Web, inidicar al navegador que elementos mostrar en un JSON -->
+  <link rel="manifest" href="site.webmanifest" />
+  <!-- icono de acceso para IOS -->
+  <link rel="apple-touch-icon" href="icon.png" />
+  <!-- Recordar que favicon.ico tiene que estar en el directorio inicial -->
+
+  <!-- links de estilos -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/index.css" />
+  <!-- Se cambia el tema de algunos navegadores -->
+  <meta name="theme-color" content="#fafafa" />
+</head>
+
+<body>
+  <!--  Caja Padre de 3 columnas: 2 pequeñas a los laterales como márgenes y una central con el contenido -->
+  <div class="container">
     <!-- *** ESTRUCTURA SEMÁNTICA *** -->
-    <!-- Header (encabezado de la página, zona superior) -->
+
     <header>
-      <!-- nav (el navegador de toda la web) -->
+      <!-- El header tiene tamaño de 100px y está formado por 2 h3 a la izquierda y un nav con 4 links a la derecha -->
+      <section class="header_texto">
+        <h3 class="header_texto_izq">Website</h3>
+        <h3 class="header_texto_der">Name</h3>
+      </section>
+      <!-- Aplicar un flex space-between -->
       <nav>
-        <a href="" class="link1">link1</a>
-        <a href="" class="link2">link2</a>
-        <a href="" class="link3">link3</a>
-        <a href="" class="link4">link4</a>
+        <a href="#" class="Home">Home</a>
+        <a href="#" class="Settings">Settings</a>
+        <a href="#" class="Profile">Profile</a>
+        <a href="#" class="Help">Help</a>
       </nav>
     </header>
-    <!-- Main (centro de la página, zona central) -->
+    <!-- Main formado por 1 columna central que divide al formulario y a la imagen con un gap en el centro -->
     <main>
-      <!-- section y article (posibilidades dentro de main) -->
+      <!-- Texto -->
+      <section class="main_formulario">
+        <h1>Fill the form below</h1>
+        <h3 class="main_formulario_completar" >Complete the below form to get instant access.</h3>
+        <br>
+        <!-- Formulario -->
+        <ul>
+          <li><form action=""><input type="text" placeholder=" Company name"></form></li>
+          <br>
+          <li><form action=""><input type="text" placeholder=" Full name"></form></li>
+          <br>
+          <li>
+            <form action="">
+              <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="envelope"
+                class="svg-inline--fa fa-envelope fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" width="3.5em"
+                viewBox="0 0 512 512">
+                <path fill="currentColor"
+                  d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z">
+                </path>
+              </svg>
+              <input type="email" placeholder=" Email"></form>
+          </li>
+          <br>
+          <li><form action=""><input type="text" placeholder=" Phone"></form></li>
+          <br>
+          <li><form action=""><input type="" placeholder=" Choose service..."></form> </li>
+            <br>
+            <li><form action=""><button type="submit">Send request</button></form></li>
+        </ul>
+      </section>
+      <!-- Imagen delivery -->
+      <figure><img src="img/desktop/imagen camion.png" alt="imagen camion"></figure>
     </main>
-    <!-- Footer (final de la página, zona inferior) -->
-    <footer>
-      <h6>&copy;Copyright</h6>
-    </footer>
-    </div>
-    <!-- *** Google Analytics *** -->
-    <script src="https://www.google-analytics.com/analytics.js" async></script>
-  </body>
+  </div>
+  <!-- *** Google Analytics *** -->
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
 </html>
